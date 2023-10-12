@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>排行榜</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: #50B57F;
+            background-color: #21212E;
+        }
+
+        h1 {
+            text-align: center;
+            color: #50B57F;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            color: #50B57F;
+        }
+
+        th {
+            background-color: #21212E;
+        }
+    </style>
+</head>
+<body style="background-color: #21212E">
+    <div class="container">
+        <h1>排行榜</h1>
+        <table>
+            <thead>
+                <tr style="width: auto">
+                    <th>排名</th>
+                    <th>学号</th>
+                    <th>总分</th>
+                </tr>
+            </thead>
+            <tbody>
+{#                <tr>#}
+{#                    <td>1</td>#}
+{#                    <td>王小明</td>#}
+{#                    <td>95</td>#}
+{#                </tr>#}
+            {% for key, value in rank.items() %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ key }}</td>
+                    <td>{{ value }}</td>
+                </tr>
+            {% endfor %}
+
+                <!-- 在这里添加更多的排名信息 -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
