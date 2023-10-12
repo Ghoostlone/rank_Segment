@@ -23,7 +23,7 @@ app.config['SECRET_KEY'] = os.urandom(5)
 bootstrap = Bootstrap(app)
 
 # 连接到数据库
-cnn = pymysql.connect(host="frp-can.top", port=64563, user="root", password="oypjyozj", database="test", charset="utf8")
+cnn = pymysql.connect(host="", port=, user="root", password="", database="test", charset="utf8")##连接数据库部分请自己设置
 cursor = cnn.cursor()
 
 
