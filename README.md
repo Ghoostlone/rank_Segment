@@ -1,6 +1,7 @@
 # 3D 付脏分割评分和排行榜系统
 
-欢迎来到我们的 3D 付脏分割评分和排行榜系统的 GitHub 仓库。本项目旨在提供一个用于评估和比较 3D 图像分割算法的工具，以及为用户提供一个交互式的排行榜系统来共享和竞争他们的成果。
+欢迎来到我们的 3D 付脏分割评分和排行榜系统的 GitHub 仓库。本项目旨在提供一个用于评估和比较 3D 图像分割算法的工具，以及为用户提供一个交互式的排行榜系统来共享和竞争他们的成果。  
+此项目的前置项目为：https://github.com/Ghoostlone/PaddleSeg_System
 
 ## 特性
 
@@ -29,9 +30,29 @@
 - Node.js
 - npm
 
-### 安装步骤
+### 安装
 
-1. 克隆仓库
+克隆仓库
 
-```bash
-git clone https://github.com/your-username/your-repo.git
+   ```bash
+   git clone https://github.com/Ghoostlone/rank_Segment
+   ```
+安装环境
+
+   ```
+   pip install -r requirements.txt
+   ```
+
+## 使用
+
+在使用系统之前，请确保已完成安装步骤。接下来，您可以按照以下步骤使用系统：
+
+1. 由教师先上传GT图
+2. 学生上传相对应的分割结果（文件名需对应GT图）
+3. 进行后台评分
+4. 生成排行榜
+
+## 评分标准
+
+![image](https://github.com/Ghoostlone/rank_Segment/assets/53688418/b79e9645-1ec8-4d8b-baf6-54424cc35dfe)
+
